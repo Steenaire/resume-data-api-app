@@ -15,6 +15,7 @@ class ResumesController < ApplicationController
 
   def create
     @student = Student.new(student_params)
+    @student.save
   end
 
   def edit
@@ -22,6 +23,12 @@ class ResumesController < ApplicationController
   end
 
   def update
+    @student = Student.find_by(id: params[:id])
+    @student.assign_attributes(student_params)
+    @student.save
+  end
+
+  def destroy
   end
 
   private
@@ -71,7 +78,7 @@ class ResumesController < ApplicationController
           :url,
           :screenshot
         ]
-        )
+      )
     end
 
 end
