@@ -57,6 +57,19 @@ class ResumesController < ApplicationController
           :start_date,
           :end_date,
           :student_id
+        ],
+        skills_attributes: [
+          :id,
+          :student_id,
+          :skill_name
+        ],
+        capstones_attributes: [
+          :id,
+          :student_id,
+          :name,
+          :description,
+          :url,
+          :screenshot
         ]
         )
     end
