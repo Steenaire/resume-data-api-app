@@ -78,7 +78,7 @@ class ResumesController < ApplicationController
           :url,
           :screenshot
         ]
-        )
+      )
     end
 
 end
