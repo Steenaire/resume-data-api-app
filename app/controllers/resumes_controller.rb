@@ -65,12 +65,14 @@ class ResumesController < ApplicationController
           :details,
           :start_date,
           :end_date,
-          :student_id
+          :student_id,
+          :_destroy
         ],
         skills_attributes: [
           :id,
           :student_id,
-          :skill_name
+          :skill_name,
+          :_destroy
         ],
         capstones_attributes: [
           :id,
@@ -78,7 +80,8 @@ class ResumesController < ApplicationController
           :name,
           :description,
           :url,
-          :screenshot
+          :screenshot,
+          :_destroy
         ]
       )
     end
