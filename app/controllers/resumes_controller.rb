@@ -47,7 +47,7 @@ class ResumesController < ApplicationController
         :website,
         :resume,
         :github,
-        :photo
+        :photo,
         educations_attributes: [
           :id, 
           :degree, 
