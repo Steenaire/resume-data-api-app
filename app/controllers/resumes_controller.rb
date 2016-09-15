@@ -29,6 +29,8 @@ class ResumesController < ApplicationController
   end
 
   def destroy
+    @student = Student.find_by(id: params[:id])
+    @student.destroy
   end
 
   private
